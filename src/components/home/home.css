@@ -1,0 +1,95 @@
+.heading{
+    font-size: 30px;
+    font-weight: 700;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub_heading{
+    font-size: 20px;
+    font-weight: 600;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* make .user a card with all item align in row with nice hover box shadow*/
+
+.user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.user:hover{
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    /* hover background match the theme */
+    background-color: #f5f5f5;
+}
+.user-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.user-image img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: clamp(0.8125rem, 0.775rem + 0.1875vw, 1rem);
+}
+
+.user-email a{
+    text-decoration: none;
+    color: #007bff;
+}
+
+.user-fav-icon{
+    cursor: pointer;
+    color: #ccc;
+    font-size: 18px;
+}
+
+.user-fill-fav-icon{
+    color: #007bff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.user-fav-icon:hover{
+    color: #007bff;
+}
+
+/* hide the email for mobile view */
+@media screen and (max-width: 450px){
+    .user-info .user-email{
+        display: none;
+    }
+}
