@@ -18,7 +18,7 @@ You can see the app here [Contact List](https://boisterous-moonbeam-66b3f8.netli
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone [https://link-to-project](https://github.com/cellva03/contact-list.git)
 ```
 
 Go to the project directory
